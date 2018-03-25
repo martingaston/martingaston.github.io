@@ -1,4 +1,4 @@
-# martingaston.github.io
+# [martingaston.github.io](http://martingaston.github.io)
 
 Firstly, thanks for taking the time to read this :bowtie: Below are a few thoughts and resources I used to make my portfolio site:
 

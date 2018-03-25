@@ -1,0 +1,321 @@
+/*
+______          _    __      _ _       
+| ___ \        | |  / _|    | (_)      
+| |_/ /__  _ __| |_| |_ ___ | |_  ___  
+|  __/ _ \| '__| __|  _/ _ \| | |/ _ \ 
+| | | (_) | |  | |_| || (_) | | | (_) |
+\_|  \___/|_|   \__|_| \___/|_|_|\___/ 
+
+*/
+
+/*
+ * CONTENTS :)
+ *
+ * I.    Fonts
+ * II.   Globals
+ * III.  Sidebar
+ * IV.   Content
+ * V.    SVG Rendering
+ * VI.   Animations
+ * VII.  Themes
+ */
+
+/*
+ * I. Fonts
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,900|Open+Sans');
+
+/*
+ * II. Globals
+ */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #55595D;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: inline;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+ * III. Sidebar
+ */
+
+.container {
+  max-width: 38rem;
+  padding: 1rem;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+.sidebar {
+  background-color: #1b998b;
+  color: rgba(255, 255, 255, .5);
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  .sidebar {
+    width: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    padding: 3rem 1rem;
+    text-align: center;  
+  }
+  
+  .sidebar-text {
+  position: absolute;
+  right:  1rem;
+  bottom: 1rem;
+  left:   1rem;
+  text-align: left;
+  padding: 0 2rem 0 2rem;
+  }
+  
+}
+
+.sidebar nav {
+  margin-bottom: 1rem;
+}
+
+#hi {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.sidebar a {
+  color: #fff;
+}
+
+.sidebar nav {
+  margin-left:auto;
+  margin-bottom:auto;
+  display: block;
+}
+
+.sidebar-nav-entry {
+  display: inline;
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 48em) {
+  .sidebar nav {
+    margin-left:10px;
+    margin-bottom:10px;
+    display: block;
+  }
+  .sidebar-nav-entry {
+    margin-left: 0.5rem;
+    display: block;
+    line-height: 150%;
+    font-size: 1rem;
+  }
+}
+
+a.sidebar-nav-entry:hover,
+a.sidebar-nav-entry:focus {
+  text-decoration: underline;
+}
+
+.sidebar-footer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color:rgba(239, 51, 64, 0.7);
+}
+
+/*
+ * IV. Content
+ */
+
+.content {
+  margin: 1.5rem;
+}
+
+@media (min-width: 48em) {
+  .content {
+    margin-right:auto;
+    margin-left: 24rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width:500px;
+    padding:4px;
+    text-align: left;
+  }
+}
+
+.content h1, h2, h3 {
+  color: #1b998b;
+}
+
+.content h2 {
+  font-size: 28px;
+}
+
+.content h3 {
+  font-size: 18px;
+}
+
+.content p, li {
+  line-height: 175%;
+  margin-bottom: 1rem;
+}
+
+.content a {
+  color: #1b998b;
+}
+
+.responsive {
+  width: 50%;
+  float: left;
+  padding: 0 0.5rem;
+  height: auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 48em) {
+  .gallery img {
+    opacity: 0.7;
+  }
+
+  .gallery img:hover {
+    opacity: 1.0;
+  }
+}
+
+.gallery-desc {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.content .studying {
+  margin: 1rem;
+}
+
+.content .language {
+  font-weight: 500;
+  margin-right: 0.5rem;
+  font-weight: 600;
+  display:inline;
+  line-height: 150%;
+}
+
+.content .bttop {
+  font-size: 2rem;
+  margin-top: 4rem;
+  text-align:center;
+  opacity: 0.6;
+}
+
+.content .bttop:hover {
+  opacity: 1.0;
+}
+
+.content .footer-text {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/*
+ * V. SVG Rendering
+ */
+
+.svg {
+  display: inline-flex;
+  align-self: center;
+  margin-right: .25rem;
+}
+
+.svg svg {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+
+}
+
+.svg.baseline {
+  display: inline-flex;
+  top: .125em;
+  position: relative;
+}
+
+.content .svg svg {
+  color: #1b998b;
+  margin-left: .25rem;
+  right: auto;
+}
+
+/*
+ * VI. Animations
+ */
+
+@-webkit-keyframes wobble  {
+  0%  { -webkit-transform:  rotate(0deg); }
+  33%  { -webkit-transform:  rotate(-2deg); }
+  66%  { -webkit-transform:  rotate(2deg); }
+  100%  { -webkit-transform:  rotate(0deg); }
+}
+
+#hi:hover { -webkit-animation: wobble 1s; }
+
+/*
+ * VII. Themes - uncomment out to use
+ */
+
+/* Cherry Tomato */
+
+/* .sidebar {
+  background-color: #E34132;
+}
+
+.content h1, .content h2, .content h3, .content a, .content .svg svg {
+  color: #E34132;
+} */
+
+/* Palace Blue */
+
+
+/* .sidebar {
+  background-color: #3267AD;
+}
+
+.content h1, .content h2, .content h3, .content a, .content .svg svg {
+  color: #3267AD;
+} */

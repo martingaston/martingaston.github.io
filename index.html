@@ -1,187 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Martin Gaston | Portfolio</title>
-  <meta charset="UTF-8">
-  <meta name="keywords" content="Portfolio FreeCodeCamp Founders & Coders">
-  <meta name="author" content="Martin Gaston">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Hi! I'm Martin. This is my portfolio.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+    <link rel="stylesheet" href="retro.css" />
+    <link rel="icon" type="image/png" href="terminal.png" sizes="64x64">
+    <title>~$ ./martingaston</title>
 </head>
-<body>
-  <div class="sidebar">
-    <div class="container sidebar-text">
-      <div id="hi">Hi!</div>
-      <p>I'm Martin. I always wanted to learn code, but my background was in arts and humanities - so I assumed I couldn't. I'm doing my best to make up for lost time, and I'd like to make everyone feel confident enough to enjoy tech. Get in touch <a href="https://www.twitter.com/squidmania"
-          target="_blank">@squidmania</a></p>
-      <nav>
-        <a class="sidebar-nav-entry" id="nav-studying" href="#studying">
-          <div class="svg baseline">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"/>
-          </svg>
-          </div>Currently Studying
-        </a>
-        <a class="sidebar-nav-entry" id="nav-work" href="#work">
-          <div class="svg baseline">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"/>
-          </svg>
-          </div>Some Work</a>
-        <a class="sidebar-nav-entry" id="nav-why" href="#why">
-          <div class="svg baseline">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"/>
-          </svg>
-          </div>Why Now?</a>
-        <a class="sidebar-nav-entry" id="nav-discoveries" href="#discoveries">
-          <div class="svg baseline">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"/>
-          </svg>
-          </div>Recent Discoveries</a>
-      </nav>
-      <nav>
-        <a class="sidebar-nav-entry" href="https://www.codewars.com/users/squidmania">
-          <div class="svg baseline">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 230"><path d="M0,115c0-25,0-50,0-75c0-23.6,16.4-40,39.9-40C90,0,140.2,0,190.3,0c23.2,0,39.6,16.5,39.6,39.7c0,50.1,0,100.3,0,150.4
-				c0,23.2-16.5,39.7-39.6,39.7c-50.3,0-100.6,0.1-150.9,0c-22.8,0-39.3-16.6-39.4-39.5C0,165.3,0,140.2,0,115z M179,176.4
-				c1.9-2.3,4.2-6.8,6.1-6.7c8.5,0.6,10.1-8.2,16.1-10.8c1.9-0.8,2.3-5,4.3-6.2c4.5-2.8,5.5-6.6,4.4-11.1c-0.6-2.6,0.1-3.8,2.1-5.3
-				c3.8-2.8,4.7-6.4,2.8-11c-0.9-2.1-0.2-4.7-0.4-7.1c-0.4-3.3-0.3-6.9-1.6-9.8c-1.2-2.4-4.2-4-6.3-5.9c0.1-4.3,0.1-9.2-2.2-12.4
-				c-2.4-3.4-1.4-5.9-1.3-9.3c0.2-5.8-1.4-12-3.5-17.5c-0.7-1.8-2.4-3.3-2.3-5.8c0.1-1.3-0.5-3.3-1.5-4c-4.5-3.1-8.3-6.5-11.5-11.3
-				c-1.7-2.6-8.5-1.1-11.6-3.5c-3.3-2.5-5.5-7.8-10-7.1c-7.4,1.2-14.1-0.4-21.1-1.9c-0.5-0.1-1,0-1.5-0.1c-1.8-0.6-3.7-0.9-5.3-1.9
-				c-3.6-2.1-7.1-4.4-11.2-7c-0.1-0.5-0.2-1.8-0.4-3.3c-1.8,1-3.2,2.5-4.6,2.4c-2.7-0.1-5.4-1.2-8.1-1.7c-5.3-1-10.8-2.2-14.9,3
-				c-0.5,0.6-1.2,1-1.7,1.5c-7.7-4-11.6-3.2-16.5,3.1c-0.7,0.9-2,1.6-3.1,2c-5.2,2.1-10,4.1-12.9,9.9c-2.3,4.6-6.9,8.1-10.4,12.2
-				c-0.5,0.6-0.2,1.8-0.6,2.4c-0.6,0.8-1.7,2-2.4,1.9c-4.7-0.8-10.1,4.8-14.6-1.2c0.8,1.9,1.5,3.7,2.1,5.2c-2.9,2.7-5.7,4.9-8.1,7.4
-				c-4,4.2-7.5,8.7-8.5,14.7c0,0.1-0.3,0.1-0.4,0.2c-4.8,2.9-5.2,7.2-4.1,12.2c0.4,1.8,0.8,4.2-0.1,5.5c-5.7,8.1-1.8,15.6,4.2,19.1
-				c0,5.6,0,11,0,16.7c3.9,2.4,3.8,2.4,0.8,7.3c-0.6,0.9-0.2,2.5,0,3.8c0.2,1.6,0.5,3.3,0.9,4.9c1.6,6.1,3.2,12.2,5.2,18.1
-				c0.4,1.3,2.3,2.7,3.7,3.1c2.7,0.7,3.6,2.2,4.1,4.8c1.2,5.6,5.2,8.7,10.9,9.2c1.3,0.1,3.1,0.4,3.9,1.3c7,7.9,10.8,8.9,20.5,4.9
-				c2.9,4.4,7.4,4.8,12.2,4.5c1.2-0.1,2.5,0.4,3.5,1.1c4.7,2.8,7,9.6,14.1,8.4c0.4-0.1,0.8,1.1,1.3,1.3c3.3,1.1,6.6,2.2,10,3
-				c1.7,0.4,3.9-0.3,5.2,0.6c4.8,3.2,9,2.1,13.4-0.8c1.1-0.7,2.9-1.2,4.1-0.8c6.5,1.9,11.3,0,14.7-5.8c0.7-1.1,2.3-2.3,3.6-2.4
-				c9.3-0.6,14.7-6.1,15.3-15.1C170,182.2,174.4,179.4,179,176.4z"/><path d="M157.6,145.4c-3.4,4.7-4,9.3-0.2,14.2c-5.2,4.3-8.8,9.4-6.6,16.9c-5.4,1.6-9.4,4.4-11,10c-0.2,0.8-2,1.2-3.1,1.6
-				c-3.7,1.4-7.4,2.7-12.4,4.5c-4.1-2.8-9.5,2.7-15.6,1.6c-6-1-10.8-3.9-16.9-4.5c5.7-1.8,12.1-1.8,14.3-4.9
-				c4.1-5.7,9.4-9.6,13.7-14.6c3.6-4.1,5.5-10.4,8.6-15.6c0.3-0.5,0.5-1.3,0.5-1.9c0.4-3.2-0.6-6.3,1.7-9.6c1.2-1.6-0.7-5.4-1.1-8.2
-				c-0.3-1.6-0.3-3.2-0.6-4.8c-0.4-1.7-0.7-3.6-1.7-4.9c-3.3-4.2-3-6.6,2.5-10.4c1.8,1.8,3.6,3.7,5.6,5.7c1.8,0.6,3.9,1.9,6.2,2.2
-				c3.1,0.3,3.7,2.2,5.3,4.4c3.4,4.6,6.4,9,7.7,14.6C154.6,142.9,156.2,143.9,157.6,145.4z"/><path d="M180.3,159.5c-4.3-6.3,1.9-15.2-7.2-17.4c1.4-8.1-0.1-11.1-6.3-14.9c-1.2-0.8-2.4-2.7-2.5-4.1c-0.1-5-2.7-7.4-7.3-7.7
-				c-2.5-0.2-4.5-0.6-5.3-3.4c-0.2-0.8-1.3-1.7-2.1-2c-5.3-1.6-10.6-3.2-15.9-4.5c-3.3-0.8-6.6-1.2-10.5-1.9
-				c3.9-8.1,12-9.2,18.8-11.6c7.2-2.5,15-3.2,22.6,0c-0.1,1.7-0.3,3.7-0.5,5.8c0.4,0.2,0.8,0.4,1.2,0.6c1.2-1.3,2.5-2.6,4-4.2
-				c3.1,1.7,6.5,3.1,9.4,5.2c4,2.9,7.7,6.4,11.5,9.6c0.4,0.4,0.8,1.2,0.7,1.7c-0.4,4.4,0.6,8.2,3.9,11.3c0.4,0.4,0.2,1.5,0.2,2.3
-				c-0.1,3.8-0.2,7.6-0.2,11.4c0,0.6,0.5,1.5,0.2,1.9c-2.3,3.8-4.5,7.6-7,11.2C185.8,152.1,183.3,155.3,180.3,159.5z"/><path d="M48.8,65.7c-2.3,6.5-1.2,11.5,5.1,14.2c-3.1,9.3-2.2,11.3,6,15.5c1,0.5,2,2.3,2,3.5c0,4.7,2.8,6.2,6.8,7.1
-				c1.8,0.4,3.3,1.9,4.9,3c1,0.6,1.8,1.5,2.8,1.9c7,2.7,13.8,6.5,21.9,4.6c1.1-0.3,2.3,0.4,3.5,0.7c-0.5,1.1-0.7,2.5-1.5,3.2
-				c-4,3.8-7.2,8.7-13.9,8.6c-2.6,0-5.2,1.8-7.7,3c-7.4,3.8-14.9-2.2-20.8-0.2c-4.5-2.7-8-4.7-11.5-7c-1.3-0.9-3.1-2-3.3-3.3
-				c-1-5.5-4.6-8.2-9.8-9.6c0.8-3.8,1.6-7.5,2.5-11.4c-3.1-1.4-6.3-3.1-3-7.4c0.2-0.2,0.2-0.6,0.2-1c-1.2-10.6,7.6-16.4,11.8-24.4
-				c0.2-0.4,0.8-0.6,1.3-0.7C46.7,65.8,47.5,65.8,48.8,65.7z"/>
-			<path d="M71.4,173.1c-0.3-0.8-0.7-1.9-1.4-3.9c-0.9,2-1.5,3.1-1.8,3.9c-3.7-0.9-7.3-1.7-11.3-2.6c0-0.8,0-2.1,0-3.3
-				c-0.3,0.4-0.6,0.8-0.9,1.2c-3.5-1.7-7.3-3.1-10.5-5.2c-1.9-1.2-2.6-4.4-4.5-5.4c-4.2-2.1-3.2-6.1-4.5-9.3c-0.9-2.1-0.3-4,2.8-3.7
-				c3.9,0.4,7.8,0.7,13,1.2c4.7,5.2,7.8,5.8,15.7,2.3c1.1-0.5,2.5-0.4,3.7-0.4c2,0,4.1,0.7,5.8,0.1c6-1.8,12.4-3,17.5-6.2
-				c4.6-2.9,7.4-8.5,11.3-12.6c2-2.2,4.6-3.8,7.3-5.9c0.3,4,0.6,8.4,0.8,12.8c0.1,2.1,0.4,4.5-0.3,6.3c-1.7,4.4-3.9,8.6-6.2,12.8
-				c-0.5,0.9-2.6,1-2.8,1.8c-2.3,8.1-10.6,8.4-16.1,12.3c-2.1,1.4-5,1.7-7.6,2.3C78.3,172.3,75.2,172.6,71.4,173.1z"/>
-			<path d="M111.5,97.2C107.7,87,110.7,77.1,115,67c4.5,0.3,5.8-3.4,6.9-7.5c0.3-1.2,1.3-2.6,2.4-3.1c4.3-1.8,8.8-4.8,13.1-4.6
-				c6.3,0.4,11.8-6.2,18.3-1.5c0.9,0.7,2.6,0.6,3.9,0.5c3.5-0.2,6.4-0.5,8.4,4c0.8,1.9,5.3,2.2,7.4,3c3.2,2.5,5.9,4.7,8.6,6.9
-				c0.7,0.6,1.2,1.3,1.5,2.2c0.8,2,1.4,4.1,2,6.2c0.3,1.2,0.2,2.4,0.3,3.6c-1,0-2.1,0.2-3.1,0.1c-3.7-0.2-7.4-0.5-11.1-0.9
-				c-1.1-0.1-2.1-0.6-3.1-1.1c-1.5-0.7-3-2.4-4.3-2.3c-4.6,0.5-9.3,2.6-13.8,2.2c-4.8-0.4-9.1-1.2-12.9,2.5
-				c-0.7,0.7-1.7,1.5-2.5,1.5c-5.5-0.3-9,2-12.3,6.6C121.2,89.9,116.1,93.1,111.5,97.2z"/>
-			<path d="M74.8,88.9c-2-3.7-3-6.8-4.9-9.2c-2.7-3.3-0.7-6.5,1.2-7.7c3.9-2.4,1.8-5.4,2.2-8.1c0.3-1.9,0.6-3.7,1-5.5
-				c0.6-2.7,1.4-5.3,2.5-7.4c2.7-3.3,5.4-6.6,8.2-9.8c0.7-0.8,1.7-1.4,2.6-2c2.6-1.7,5.2-3.4,7.9-5.1c0.8-0.5,1.6-1.2,2.4-1.2
-				c6.2-0.1,12.4-0.1,19.9-0.1c-1.1,2.4-1.9,4.3-2.8,6.2c-0.1,0.3-0.6,0.4-0.7,0.7c-2.1,5.5-5.5,9.4-11.3,11.8
-				c-4.2,1.8-2.4,6.5-0.6,10.3c-5.4,2.8-9.6,6.1-6.1,12.9c0.3,0.6-0.4,1.7-0.7,2.6c-0.5,1.2-1.6,2.6-1.4,3.6c0.9,4.2,2,8.3-0.4,12.4
-				c-0.2,0.3,0.2,1,0.5,1.3c2.9,3,5.8,5.9,8.8,9c-1.9,3.2-3.4,5-6.3,1.2c-0.9-1.2-3-1.6-4.5-2.3c-1.3-0.7-2.7-1.3-4-2
-				c-1.4-0.8-2.8-1.7-4.1-2.6c-1.4-1-2.8-2.1-4-3.3C78,92.6,76.2,90.4,74.8,88.9z"/></svg>
-          </div>Codewars</a>
-        <a class="sidebar-nav-entry" href="https://www.freecodecamp.org/martingaston">
-          <div class="svg baseline">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M69.3 144.5c-41 68.5-36.4 163 1 227C92.5 409.7 120 423.9 120 438c0 6.8-6 13-12.8 13C87.7 451 8 375.5 8 253.2c0-111.5 78-186 97.1-186 6 0 14.9 4.8 14.9 11.1 0 12.7-28.3 28.6-50.7 66.2zm195.8 213.8c4.5 1.8 12.3 5.2 12.3-1.2 0-2.7-2.2-2.9-4.3-3.6-8.5-3.4-14-7.7-19.1-15.2-8.2-12.1-10.1-24.2-10.1-38.6 0-32.1 44.2-37.9 44.2-70 0-12.3-7.7-15.9-7.7-19.3 0-2.2.7-2.2 2.9-2.2 8 0 19.1 13.3 22.5 19.8 2.2 4.6 2.4 6 2.4 11.1 0 7-.7 14.2-.7 21.3 0 27 31.9 19.8 31.9 6.8 0-6-3.6-11.6-3.6-17.4 0-.7 0-1.2.7-1.2 3.4 0 9.4 7.7 11.1 10.1 5.8 8.9 8.5 20.8 8.5 31.4 0 32.4-29.5 49-29.5 56 0 1 2.9 7.7 12.1 1.9 29.7-15.1 53.1-47.6 53.1-89.8 0-33.6-8.7-57.7-32.1-82.6-3.9-4.1-16.4-16.9-22.5-16.9-8.2 0 7.2 18.6 7.2 31.2 0 7.2-4.8 12.3-12.3 12.3-11.6 0-14.5-25.4-15.9-33.3-5.8-33.8-12.8-58.2-46.4-74.1-10.4-5-36.5-11.8-36.5-2.2 0 2.4 2.7 4.1 4.6 5.1 9.2 5.6 19.6 21.4 19.6 38.2 0 46.1-57.7 88.2-57.7 136.2-.2 40.3 28.1 72.6 65.3 86.2zM470.4 67c-6 0-14.4 6.5-14.4 12.6 0 8.7 12.1 19.6 17.6 25.4 81.6 85.1 78.6 214.3 17.6 291-7 8.9-35.3 35.3-35.3 43.5 0 5.1 8.2 11.4 13.2 11.4 25.4 0 98.8-80.8 98.8-185.7C568 145.9 491.8 67 470.4 67zm-42.3 323.1H167c-9.4 0-15.5 7.5-15.5 16.4 0 8.5 7 15.5 15.5 15.5h261.1c9.4 0 11.9-7.5 11.9-16.4 0-8.5-3.5-15.5-11.9-15.5z"/></svg>
-          </div>Free Code Camp</a>
-        <a class="sidebar-nav-entry" href="https://github.com/martingaston/martingaston.github.io">
-          <div class="svg baseline">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-          </div>GitHub project</a>
-      </nav>
-      <div class="sidebar-footer">
-        <div class="svg baseline">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M414.9 24C361.8 24 312 65.7 288 89.3 264 65.7 214.2 24 161.1 24 70.3 24 16 76.9 16 165.5c0 72.6 66.8 133.3 69.2 135.4l187 180.8c8.8 8.5 22.8 8.5 31.6 0l186.7-180.2c2.7-2.7 69.5-63.5 69.5-136C560 76.9 505.7 24 414.9 24z"/></svg>
-        </div></div>
-    </div>
-  </div>
 
-  <div class="content container">
-    <h2>Stay Awhile...</h2>
-
-    <h3 id="studying">Currently Studying</h3>
-
-    <p class="studying">
-      <div class="language">
-        <div class="svg baseline">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
-        </div>JavaScript</div>...wanting to get started with node.js<br>
-      <div class="language">
-        <div class="svg baseline">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>
-        </div>HTML</div>...because it's a classic<br>
-      <div class="language">
-        <div class="svg baseline">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
-        </div>CSS</div>...who doesn't want to make things look good?<br>
-      <div class="language">
-        <div class="svg baseline">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M167.8 36.4c-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1zm-6.7 28.4c11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4zm185.2 81.4v47.5c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6-7.7-30.9-22.3-54.2-53.4-54.2h-40.1zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3z"/></svg>
-        </div>Python</div>...I love the idea of working more closely with data<br>
-      <div class="language">
-        <div class="svg baseline">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M464 0H112c-4 0-7.8 2-10 5.4L2 152.6c-2.9 4.4-2.6 10.2.7 14.2l276 340.8c4.8 5.9 13.8 5.9 18.6 0l276-340.8c3.3-4.1 3.6-9.8.7-14.2L474.1 5.4C471.8 2 468.1 0 464 0zm-19.3 48l63.3 96h-68.4l-51.7-96h56.8zm-202.1 0h90.7l51.7 96H191l51.6-96zm-111.3 0h56.8l-51.7 96H68l63.3-96zm-43 144h51.4L208 352 88.3 192zm102.9 0h193.6L288 435.3 191.2 192zM368 352l68.2-160h51.4L368 352z"/></svg>
-        </div>Ruby</div>...everyone I know who codes says Ruby is a treat<br>
-      <div class="language">
-        <div class="svg baseline">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M196.1 123.6c-.2-1.4 1.9-2.3 3.2-2.9 1.7-.7 3.9-1 5.5-.1.4.2.8.7.6 1.1-.4 1.2-2.4 1-3.5 1.6-1 .5-1.8 1.7-3 1.7-1 .1-2.7-.4-2.8-1.4zm24.7-.3c1 .5 1.8 1.7 3 1.7 1.1 0 2.8-.4 2.9-1.5.2-1.4-1.9-2.3-3.2-2.9-1.7-.7-3.9-1-5.5-.1-.4.2-.8.7-.6 1.1.3 1.3 2.3 1.1 3.4 1.7zm214.7 310.2c-.5 8.2-6.5 13.8-13.9 18.3-14.9 9-37.3 15.8-50.9 32.2l-2.6-2.2 2.6 2.2c-14.2 16.9-31.7 26.6-48.3 27.9-16.5 1.3-32-6.3-40.3-23v-.1c-1.1-2.1-1.9-4.4-2.5-6.7-21.5 1.2-40.2-5.3-55.1-4.1-22 1.2-35.8 6.5-48.3 6.6-4.8 10.6-14.3 17.6-25.9 20.2-16 3.7-36.1 0-55.9-10.4l1.6-3-1.6 3c-18.5-9.8-42-8.9-59.3-12.5-8.7-1.8-16.3-5-20.1-12.3-3.7-7.3-3-17.3 2.2-31.7 1.7-5.1.4-12.7-.8-20.8-.6-3.9-1.2-7.9-1.2-11.8 0-4.3.7-8.5 2.8-12.4 4.5-8.5 11.8-12.1 18.5-14.5 6.7-2.4 12.8-4 17-8.3 5.2-5.5 10.1-14.4 16.6-20.2-2.6-17.2.2-35.4 6.2-53.3 12.6-37.9 39.2-74.2 58.1-96.7 16.1-22.9 20.8-41.3 22.5-64.7C158 103.4 132.4-.2 234.8 0c80.9.1 76.3 85.4 75.8 131.3-.3 30.1 16.3 50.5 33.4 72 15.2 18 35.1 44.3 46.5 74.4 9.3 24.6 12.9 51.8 3.7 79.1 1.4.5 2.8 1.2 4.1 2 1.4.8 2.7 1.8 4 2.9 6.6 5.6 8.7 14.3 10.5 22.4 1.9 8.1 3.6 15.7 7.2 19.7 11.1 12.4 15.9 21.5 15.5 29.7zM220.8 109.1c3.6.9 8.9 2.4 13 4.4-2.1-12.2 4.5-23.5 11.8-23 8.9.3 13.9 15.5 9.1 27.3-.8 1.9-2.8 3.4-3.9 4.6 6.7 2.3 11 4.1 12.6 4.9 7.9-9.5 10.8-26.2 4.3-40.4-9.8-21.4-34.2-21.8-44 .4-3.2 7.2-3.9 14.9-2.9 21.8zm-46.2 18.8c7.8-5.7 6.9-4.7 5.9-5.5-8-6.9-6.6-27.4 1.8-28.1 6.3-.5 10.8 10.7 9.6 19.6 3.1-2.1 6.7-3.6 10.2-4.6 1.7-19.3-9-33.5-19.1-33.5-18.9 0-24 37.5-8.4 52.1zm-9.4 20.9c1.5 4.9 6.1 10.5 14.7 15.3 7.8 4.6 12 11.5 20 15 2.6 1.1 5.7 1.9 9.6 2.1 18.4 1.1 27.1-11.3 38.2-14.9 11.7-3.7 20.1-11 22.7-18.1 3.2-8.5-2.1-14.7-10.5-18.2-11.3-4.9-16.3-5.2-22.6-9.3-10.3-6.6-18.8-8.9-25.9-8.9-14.4 0-23.2 9.8-27.9 14.2-.5.5-7.9 5.9-14.1 10.5-4.2 3.3-5.6 7.4-4.2 12.3zm-33.5 252.8L112.1 366c-6.8-9.2-13.8-14.8-21.9-16-7.7-1.2-12.6 1.4-17.7 6.9-4.8 5.1-8.8 12.3-14.3 18-7.8 6.5-9.3 6.2-19.6 9.9-6.3 2.2-11.3 4.6-14.8 11.3-2.7 5-2.1 12.2-.9 20 1.2 7.9 3 16.3.6 23.9v.2c-5 13.7-5 21.7-2.6 26.4 7.9 15.4 46.6 6.1 76.5 21.9 31.4 16.4 72.6 17.1 75.3-18 2.1-20.5-31.5-49-41-68.9zm153.9 35.8c3.2-11 6.3-21.3 6.8-29 .8-15.2 1.6-28.7 4.4-39.9 3.1-12.6 9.3-23.1 21.4-27.3 2.3-21.1 18.7-21.1 38.3-12.5 18.9 8.5 26 16 22.8 26.1 1 0 2-.1 4.2 0 5.2-16.9-14.3-28-30.7-34.8 2.9-12 2.4-24.1-.4-35.7-6-25.3-22.6-47.8-35.2-59-2.3-.1-2.1 1.9 2.6 6.5 11.6 10.7 37.1 49.2 23.3 84.9-3.9-1-7.6-1.5-10.9-1.4-5.3-29.1-17.5-53.2-23.6-64.6-11.5-21.4-29.5-65.3-37.2-95.7-4.5 6.4-12.4 11.9-22.3 15-4.7 1.5-9.7 5.5-15.9 9-13.9 8-30 8.8-42.4-1.2-4.5-3.6-8-7.6-12.6-10.3-1.6-.9-5.1-3.3-6.2-4.1-2 37.8-27.3 85.3-39.3 112.7-8.3 19.7-13.2 40.8-13.8 61.5-21.8-29.1-5.9-66.3 2.6-82.4 9.5-17.6 11-22.5 8.7-20.8-8.6 14-22 36.3-27.2 59.2-2.7 11.9-3.2 24 .3 35.2 3.5 11.2 11.1 21.5 24.6 29.9 0 0 24.8 14.3 38.3 32.5 7.4 10 9.7 18.7 7.4 24.9-2.5 6.7-9.6 8.9-16.7 8.9 4.8 6 10.3 13 14.4 19.6 37.6 25.7 82.2 15.7 114.3-7.2zM415 408.5c-10-11.3-7.2-33.1-17.1-41.6-6.9-6-13.6-5.4-22.6-5.1-7.7 8.8-25.8 19.6-38.4 16.3-11.5-2.9-18-16.3-18.8-29.5-.3.2-.7.3-1 .5-7.1 3.9-11.1 10.8-13.7 21.1-2.5 10.2-3.4 23.5-4.2 38.7-.7 11.8-6.2 26.4-9.9 40.6-3.5 13.2-5.8 25.2-1.1 36.3 7.2 14.5 19.5 20.4 33.7 19.3 14.2-1.1 30.4-9.8 43.6-25.5 22-26.6 62.3-29.7 63.2-46.5.3-5.1-3.1-13-13.7-24.6zM173.3 148.7c2 1.9 4.7 4.5 8 7.1 6.6 5.2 15.8 10.6 27.3 10.6 11.6 0 22.5-5.9 31.8-10.8 4.9-2.6 10.9-7 14.8-10.4 3.9-3.4 5.9-6.3 3.1-6.6-2.8-.3-2.6 2.6-6 5.1-4.4 3.2-9.7 7.4-13.9 9.8-7.4 4.2-19.5 10.2-29.9 10.2-10.4 0-18.7-4.8-24.9-9.7-3.1-2.5-5.7-5-7.7-6.9-1.5-1.4-1.9-4.6-4.3-4.9-1.4-.1-1.8 3.7 1.7 6.5z" class="st1"/></svg>
-        </div>Ubuntu</div>...don't fear the $<br>
-    </p>
-
-    <h3 id="work">Some Work</h3>
-
-    <div class="responsive">
-      <div class="gallery">
-        <a href="https://codepen.io/squidmania/full/QQWQJm/">
-        <img alt="FreeCodeCamp tribute page: Alexander Hamilton" src="http://res.cloudinary.com/squidmania/image/upload/v1521736231/hamilton200_fvo57b.png"></a>
-        <div class="gallery-desc">
-          My Free Code Camp Tribute Page (a fantastic rite of passage, by the way) is on Alexander Hamilton, because I am literally obsessed with the musical.
-        </div>
-      </div>
-    </div>
-
-    <div class="responsive">
-      <div class="gallery">
-        <a href="https://t.co/0H7SwAjocW"><img alt="Google Sheets: Kanto Pokedex Height vs Weight" src="http://res.cloudinary.com/squidmania/image/upload/v1521736240/pokemon200_csfsrf.png"></a>
-        <div class="gallery-desc">
-          Experiments in web scraping with Python and the Pokedex. Future goals are to build this out in D3 to make it more interactive and visual.
-        </div>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-    <h3 id="why">Why Now?</h3>
-    <p>It's funny - I really hated school but I love learning, and everything I've been learning recently has pointed me to the same realisation: <em>now's the time to learn code</em>.</p>
-    <p>I've been enormously lucky to have had the opportunity to spend the last eight years working in two incredibly creative industries, journalism and marketing. Yet more and more I see that the challenges and opportunities in those industries - and I'm willing to wager it's much broader than
-      just those two - is in implementing (and understanding) technological change and new ways to work.</p>
-    <p>One of the things I most strongly believe in right now is that we shouldn't separate code from our other skillsets. I think we should all learn code, but not to become coders. We shouldn't silo our coders into the corner of a workplace and just try
-      and push certain responsibilites to them, which sadly I've seen happen even in companies that pride themselves on being digital. Coding (which admittedly still feels like wrestling very rigid but incredibly fast machines to me right now - but I'm
-      doing my best) is an unbelivably powerful creative tool we can use to enhance the things we're already great at, interested in and passionate about, all while learning a new way of thinking that will steer us to new interests down the line.</p>
-
-    <h3 id="discoveries">Recent Discoveries</h3>
-    <ul>
-      <li>I really love <a href="https://www.npr.org/sections/money/2015/02/25/389027988/episode-606-spreadsheets">this episode of <cite>Planet Money</cite></a> which talks about the invention of the electronic spreadsheet. We hear automation discussed a
-        lot right now, and parts of that can be pretty terrifying, but I think there's a lot of opportunity for code to aid us with some of our more repetitive everyday tasks. I had this episode in the back of my mind a lot when I was reading Al Sweigart's
-        brilliant <a href="https://automatetheboringstuff.com"><cite>Automate the Boring Stuff in Python</cite></a>.</li>
-      <li>Marijn Haverbeke's <a href="https://eloquentjavascript.net"><cite>Eloquent Javascript</cite></a> is equal parts fascinating, useful and daunting. It's the kind of book where you finish a page and realise you've not understood any of it, only to
-        slowly become cognizant as its words roll around in your head - kind of like how Yoda trains Luke Skywalker in <cite>The Empire Strikes Back</cite>.</li>
-      <li>HBR's <a href="https://hbr.org/product/good-charts-the-hbr-guide-to-making-smarter-more-persuasive-data-visualizations/15005-PBK-ENG"><cite>Good Charts</cite></a> made me think a lot about the presentation of information, both directly in terms
-        of storytelling and data visualisation (which is what the book is about) and also in a wider scope, such as how to present technical information (like code) to other departments, clients and stakeholders.</li>
-    </ul>
-    <div class="bttop"><a href="#top">
-      <div class="svg baseline">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z"/></svg>
-      </div>
-        </a></div>
-  <div class="footer-text">Thanks for reading! Icons provided by <a href="https://fontawesome.com/license">Font Awesome</a> and used unchanged. Codewars icon provided by <a href="https://github.com/FortAwesome/Font-Awesome/issues/4809#issuecomment-272289696">Peter Rhodes</a>.</div>
-  </div>
-  <script src="script.js"></script>
+<body class="crt bg-near-black">
+    <main class="ma3-ns ma2 mb4 silver">
+        <p>--------------------------------------<br />
+            martin gaston<br />
+            <br />
+            --------------------------------------<br />
+            software engineer (react, js, python,<br />
+            html, css) and graduate of <a class="white no-underline" href="https://www.foundersandcoders.com">founders<br />
+                and coders</a>
+            <br /><br />
+            studying c, elixir, redux, d3, graphql<br />
+            <br />
+            --------------------------------------<br />
+            my hobbies include gaming, running,<br />
+            making bread, action movies, lamenting<br />
+            crystal palace, coffee, whiskey,<br />
+            terrible karaoke and hamilton<br />
+            <br />
+            --------------------------------------<br />
+            recent work:
+            <br /><br />
+            <a class="white no-underline" href="https://oscebosskey.herokuapp.com/">oscebosskey</a> - medical
+            revision app<br />
+            <a class="white no-underline" href="https://goofy-boyd-5ce2c8.netlify.com/">faceboard</a> - slidey fun
+            for everyone<br />
+            <a class="white no-underline" href="https://numdrum.fun/">numdrum</a> - stealth teach
+            maths to kids<br />
+            <a class="white no-underline" href="https://www.jessiandmartingetmarried.com/">my wedding website</a> -
+            because why not<br />
+            <a class="white no-underline" href="https://multipractice.netlify.com/">multipractice</a> - times
+            table revision<br />
+            <a class="white no-underline" href="https://github.com/martingaston/pokedex-scraper">web scraping</a> -
+            interpret
+            the pokedex<br />
+            <br />
+            --------------------------------------<br />
+            formerly head of social content at<br />
+            <a class="white no-underline" href="https://www.tmwunlimited.com">tmw unlimited</a>, before that <a class="white no-underline"
+                href="https://www.microsoft.com">microsoft</a><br />
+            and <a class="white no-underline" href="https://www.gamespot.com">gamespot</a><br />
+            <br />
+            --------------------------------------<br />
+            studied english literature with<br />
+            creative writing at <a class="white no-underline" href="">the university of<br />
+                east anglia</a><br />
+            <br />
+            --------------------------------------<br />
+            will literally cry at every single<br />
+            movie i watch on a plane<br />
+            <br />
+            --------------------------------------<br />
+            more me:<br />
+            <br />
+            <a class="white no-underline" href="https://www.github.com/martingaston">github</a><br />
+            <a class="white no-underline" href="https://www.twitter.com/squidmania">twitter</a><br />
+            <a class="white no-underline" href="https://www.instagram.com/squidmania">instagram</a><br />
+            <a class="white no-underline" href="https://www.linkedin.com/in/martingaston/">linkedin</a><br /></p>
+        <div id="blink"></div>
+    </main>
 </body>
+
 </html>
